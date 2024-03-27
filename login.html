@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=================== FLACTION ====================-->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+
+
+    <!--=================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>ShopSwift</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS_files/login-form.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        input::placeholder {
+            outline: 1px solid #ccc;
+        }
+    </script>
+</head>
+
+<body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login and Sign Up Forms</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <style>
+            /* Add custom styles here */
+            .form-group input[type="text"],
+            .form-group input[type="password"],
+            .form-group input[type="email"] {
+                border: 1px solid #ced4da; /* Border color */
+                border-radius: 5px; /* Border radius */
+                padding: 10px; /* Padding */
+            }
+            .form-group input[type="text"]::placeholder,
+            .form-group input[type="password"]::placeholder,
+            .form-group input[type="email"]::placeholder {
+                color: #6c757d; /* Placeholder color */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-6 col-md-8 col-sm-10">
+                    <div class="bg-white p-4">
+                        <!-- Login Form -->
+                        <form id="login-form" class="login-form">
+                            <h3 class="text-center mb-4">Login</h3>
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                                    </div>
+                                    <input type="password" class="form-control" id="password"
+                                        placeholder="Enter your password">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Login</button>
+                        </form>
+    
+                        <!-- Sign Up Form -->
+                        <form id="signup-form" class="signup-form" style="display: none;">
+                            <h3 class="text-center mb-4">Sign Up</h3>
+                            <div class="form-group">
+                                <label for="firstname">First Name</label>
+                                <input type="text" class="form-control" id="firstname" placeholder="Enter your first name">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname">Last Name</label>
+                                <input type="text" class="form-control" id="lastname" placeholder="Enter your last name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="signup-password">Password</label>
+                                <input type="password" class="form-control" id="signup-password"
+                                    placeholder="Enter your password">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm-password">Confirm Password</label>
+                                <input type="password" class="form-control" id="confirm-password"
+                                    placeholder="Confirm your password">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+                        </form>
+    
+                        <!-- Toggle between Login and Sign Up forms -->
+                        <p class="text-center mt-3">Don't have an account? <a href="#" id="signup-link">Sign Up</a></p>
+                        <p class="text-center">Already have an account? <a href="#" id="login-link">Login</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                // Toggle between Login and Sign Up forms
+                $('#signup-link').click(function () {
+                    $('#login-form').hide();
+                    $('#signup-form').show();
+                });
+    
+                $('#login-link').click(function () {
+                    $('#signup-form').hide();
+                    $('#login-form').show();
+                });
+            });
+        </script>
+    </body>
+    </html>
+    </body>
+
+</html>

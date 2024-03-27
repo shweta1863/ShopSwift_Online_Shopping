@@ -33,10 +33,6 @@
     <header class="header">
         <div class="header_top">
             <div class="header_container container">
-                <div class="header_contact">
-                    <span>(+91)-3425-784-773</span>
-                    <span> Our Location</span>
-                </div>
                 <p class="header_alert-news">
                     Super Value Deals- Save more with coupons
                 </p>
@@ -50,10 +46,22 @@
                 <img src="assets/img/logo.png" alt="" class="nav_logo-img">
             </a>
             <div class="nav_menu" id="nav-menu">
+                <div class="nav_menu-top">
+                    <a href="index.html" class="nav_menu-logo">
+                        <img src="assets/img/logo.png" alt="">
+                    </a>
+
+                    <div class="nav_close" id="nav-close">
+                        <i class="fi fi-rs-cross-small"></i>
+                    </div>
+                </div>
+
+
                 <ul class="nav_list">
                     <li class="nav_item">
                         <a href="index.html" class="nav_link active-link">Home</a>
                     </li>
+            
                     <li class="nav_item">
                         <a href="shop.html" class="nav_link">Shop</a>
                     </li>
@@ -67,6 +75,7 @@
                         <a href="login-register.html" class="nav_link">Login</a>
                     </li>
                 </ul>
+
                 <div class="header_search">
                     <input type="text" placeholder="Search for Products...." class="form_input" />
                     <button class="search-btn">
@@ -74,15 +83,21 @@
                     </button>
                 </div>
             </div>
+
             <div class="header_user-actions">
                 <a href="wishlist.html" class="header_action-btn">
                     <img src="assets/img/heart.svg" alt="">
                     <span class="count">3</span>
                 </a>
+
                 <a href="cart.html" class="header_action-btn">
                     <img src="assets/img/cart.svg" alt="">
                     <span class="count">3</span>
                 </a>
+
+                <div class="header_action-btn nav_toggle" id="nav-toggle">
+                    <img src="assets/img/hamburger.svg" alt="">
+                </div>
             </div>
         </nav>
     </header>
@@ -193,7 +208,6 @@
             </div>
         </section>
 
-
         <!--========== PRODUCTS =============-->
         <section class="products section container">
             <div class="tab_btns">
@@ -201,7 +215,7 @@
                 <span class="tab_btn" data-target="#popular">Popular</span>
                 <span class="tab_btn" data-target="#new-added">New Added</span>
             </div>
-            
+
             <div class="tab_items">
 
                 <!--===============FEATURED=================-->
@@ -1227,7 +1241,7 @@
         </section>
 
         <!--========== DEALS =============-->
-        <section class="deals section">
+        <!-- <section class="deals section">
             <div class="deals_container container grid">
                 <div class="deals_item">
                     <div class="deals_group">
@@ -1313,9 +1327,7 @@
                 </div>
 
             </div>
-        </section>
-
-
+        </section> -->
 
         <!--========== NEW ARRIVALS =============-->
         <section class="new_arrivals container section">
@@ -1324,26 +1336,8 @@
 
         <!--================ SHOWCASE =================-->
         <section class="showcase section">
-
         </section>
 
-        <!--================ NEWSLETTER =================-->
-        <section class="newsletter section home_newsletter">
-            <div class="newsletter_container container grid">
-                <h3 class="newsletter_title flex">
-                    <img src="assets/img/email.svg" alt="" class="newsletetr_icon">
-                    Sign up to Newsletter
-                </h3>
-
-                <p class="newsletter_description">
-                    ...and receive coupon for first shopping.
-                </p>
-                <form action="" class="newsletter_form">
-                    <input type="text" placeholder="Enter your email" class="newsletter_input">
-                    <button type="submit" class="newsletter_btn">Subscribe</button>
-                </form>
-            </div>
-        </section>
     </main>
 
     <!--================ FOOTER =================-->
@@ -1420,15 +1414,11 @@
             <div class="footer_content">
                 <h3 class="footer_title">Secured Payment Gateways</h3>
 
-                <img src="assets/img/payent-method.png" alt="" class="payment_img">
+                <img src="assets/img/payment-method.png" alt="" class="payment_img">
             </div>
 
         </div>
 
-        <div class="footer_bottom">
-            <p class="copyright">&copy; 2024 ShopSwift. All rights reserved</p>
-            <span class="designer">Designed by ShopSwift</span>
-        </div>
     </footer>
 
     <!--================ SWIPER JS =================-->

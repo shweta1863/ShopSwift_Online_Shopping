@@ -49,7 +49,7 @@
                         <a href="shop.html" class="nav_link ">Shop</a>
                     </li>
                     <li class="nav_item">
-                        <a href="accounts.html" class="nav_link">My Account </a>
+                        <a href="accounts.html" class="nav_link active-link">My Account </a>
                     </li>
                     <li class="nav_item">
                         <a href="compare.html" class="nav_link">Compare</a>
@@ -88,36 +88,148 @@
             <ul class="breadcrumb_list flex container">
                 <li><a href="index.html" class="breadcrumb_link">Home</a></li>
                 <li><span class="breadcrumb_link"></span>></li>
-                <li><span class="breadcrumb_link"></span>Fashion</li>
-                <li><span class="breadcrumb_link"></span>></li>
-                <li><span class="breadcrumb_link"></span>Shirts</li>
+                <li><span class="breadcrumb_link"></span>Account</li>
 
             </ul>
         </section>
 
-        <!--=================== CART ====================-->
+        <!--=================== ACCOUNTS ====================-->
+        <section class="accounts section--lg">
+            <div class="accounts_container container grid">
+                <div class="account_tabs">
+                    <p class="account_tab active-tab" data-target="#dashboard">
+                        <i class="fi fi-rs-settings-sliders"></i> Dashboard
+                    </p>
+
+                    <p class="account_tab active-tab" data-target="#orders">
+                        <i class="fi fi-rs-shopping-bag"></i> Orders
+                    </p>
+
+                    <p class="account_tab active-tab" data-target="#update-profile">
+                        <i class="fi fi-rs-user"></i> Update Profile
+                    </p>
+
+                    <p class="account_tab active-tab" data-target="#address">
+                        <i class="fi fi-rs-marker"></i> My Address
+                    </p>
+
+                    <p class="account_tab active-tab" data-target="#change-password">
+                        <i class="fi fi-rs-user"></i> Change Password
+                    </p>
+
+                    <p class="account_tab">
+                        <i class="fi fi-rs-exit"></i> Logout
+                    </p>
+
+                </div>
+
+                <div class="tabs_content">
+                    <div class="tab_content active-tab" content id="dashboard">
+                        <h3 class="tab_header">Hello ShopSwift !</h3>
+
+                        <div class="tab_body">
+                            <p class="tab_description">
+                                From your account dashboard, you can easily check & view your recent orders, manage your
+                                shipping and billing addresses and edit your password and acount details.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab_content" content id="orders">
+                        <h3 class="tab_header"> Your Orders</h3>
+
+                        <div class="tab_body">
+                            <table class="placed_order-table">
+                                <tr>
+                                    <th>Orders</th>
+                                    <th>Date</th>
+                                    <th>status</th>
+                                    <th>Total</th>
+                                    <th>Actions</th>
+                                </tr>
+                                <tr>
+                                    <td>#12357</td>
+                                    <td>March 02, 2024</td>
+                                    <td>Processing</td>
+                                    <td>125.00</td>
+                                    <td><a href="#" class="view_order">View</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>#4557</td>
+                                    <td>Jully 21, 2022</td>
+                                    <td>Completed</td>
+                                    <td>146.00</td>
+                                    <td><a href="#" class="view_order">View</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>#8557</td>
+                                    <td>June 12, 2022</td>
+                                    <td>Completed</td>
+                                    <td>845.00</td>
+                                    <td><a href="#" class="view_order">View</a></td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="tab_content" content id="update-profile">
+                        <h3 class="tab_header"> Update Profile</h3>
+
+                        <div class="tab_body">
+                            <form action="" class="form grid">
+                                <input type="text" placeholder="Username" class="form_input">
+                                <div class="form_btn">
+                                    <button class="btn btn--md">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="tab_content" content id="address">
+                        <h3 class="tab_header">Shipping Address</h3>
+
+                        <div class="tab_body">
+                            <address class="address">
+                                75 Business supper <br />
+                                Pune
+                            </address>
+                            <p class="city">Pune</p>
+                            <a href="" class="edit">Edit</a>
+                        </div>
+                    </div>
+
+                    <div class="tab_content" content id="change-password">
+                        <h3 class="tab_header">Change Password</h3>
+
+                        <div class="tab_body">
+                            <form action="" class="form grid">
+                                <input type="password" 
+                                 placeholder="Current Password" 
+                                 class="form_input">
+
+                                <input type="password" 
+                                 placeholder="New Password" 
+                                 class="form_input">
+                                
+                                <input type="password" 
+                                 placeholder="Confirm Password" 
+                                 class="form_input">
+
+                                <div class="form_btn">
+                                    <button class="btn btn--md">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
 
 
-
-
-        <!--=================== NEWSLETTER ====================-->
-        <section class="newsletter section home_newsletter">
-            <div class="newsletter_container container grid">
-                <h3 class="newsletter_title flex">
-                    <img src="assets/img/email.svg" alt="" class="newsletetr_icon">
-                    Sign up to Newsletter
-                </h3>
-
-                <p class="newsletter_description">
-                    ...and receive coupon for first shopping.
-                </p>
-                <form action="" class="newsletter_form">
-                    <input type="text" placeholder="Enter your email" class="newsletter_input">
-                    <button type="submit" class="newsletter_btn">Subscribe</button>
-                </form>
+                </div>
             </div>
         </section>
-    </main>
+
+z    </main>
 
     <!--=================== FOOTER ====================-->
     <footer class="footer container">
@@ -193,15 +305,11 @@
             <div class="footer_content">
                 <h3 class="footer_title">Secured Payment Gateways</h3>
 
-                <img src="assets/img/payent-method.png" alt="" class="payment_img">
+                <img src="assets/img/payment-method.png" alt="" class="payment_img">
             </div>
 
         </div>
 
-        <div class="footer_bottom">
-            <p class="copyright">&copy; 2024 ShopSwift. All rights reserved</p>
-            <span class="designer">Designed by ShopSwift</span>
-        </div>
     </footer>
 
     <!--=================== SWIPER JS ====================-->

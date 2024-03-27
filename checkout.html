@@ -8,13 +8,11 @@
     <link rel='stylesheet'
         href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-straight/css/uicons-regular-straight.css'>
 
-
     <!--=================== SWIPER CSS ====================-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!--=================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/style.css">
-
 
     <title>ShopSwift</title>
 </head>
@@ -78,45 +76,139 @@
         </nav>
     </header>
 
-
     <!--=================== MAIN ====================-->
     <main class="main">
-
 
         <!--=================== BREADCRUMB ====================-->
         <section class="breadcrumb">
             <ul class="breadcrumb_list flex container">
                 <li><a href="index.html" class="breadcrumb_link">Home</a></li>
-                <li><span class="breadcrumb_link"></span>></li>
-                <li><span class="breadcrumb_link"></span>Fashion</li>
-                <li><span class="breadcrumb_link"></span>></li>
-                <li><span class="breadcrumb_link"></span>Shirts</li>
+                <li><span class="breadcrumb_link">></span></li>
+                <li><span class="breadcrumb_link">Shop</span></li>
+                <li><span class="breadcrumb_link">></span></li>
+                <li><span class="breadcrumb_link">Checkout</span></li>
+
 
             </ul>
         </section>
 
-        <!--=================== CART ====================-->
+        <!--=================== CHECKOUT ===================-->
+        <section class="checkout section--lg">
+            <div class="checkout_container container grid">
+                <div class="checkout_group">
+                    <h3 class="section_title">Billing Details</h3>
+                    <form action="" class="form grid">
+                        <input type="text" placeholder="Name" class="form_input">
+                        <input type="text" placeholder="Address" class="form_input">
+                        <input type="text" placeholder="City" class="form_input">
+                        <input type="text" placeholder="Country" class="form_input">
+                        <input type="text" placeholder="Pincode" class="form_input">
+                        <input type="text" placeholder="Phone" class="form_input">
+                        <input type="email" placeholder="Email" class="form_input">
 
+                        <h3 class="checkout_title">Additional Information</h3>
 
+                        <textarea name="" placeholder="Order note" id="" cols="30" rows="10"
+                            class="form_input textarea"></textarea>
+                    </form>
 
+                </div>
 
-        <!--=================== NEWSLETTER ====================-->
-        <section class="newsletter section home_newsletter">
-            <div class="newsletter_container container grid">
-                <h3 class="newsletter_title flex">
-                    <img src="assets/img/email.svg" alt="" class="newsletetr_icon">
-                    Sign up to Newsletter
-                </h3>
+                <div class="checkout_group">
+                    <h3 class="section_title"> Cart Totals </h3>
 
-                <p class="newsletter_description">
-                    ...and receive coupon for first shopping.
-                </p>
-                <form action="" class="newsletter_form">
-                    <input type="text" placeholder="Enter your email" class="newsletter_input">
-                    <button type="submit" class="newsletter_btn">Subscribe</button>
-                </form>
+                    <table class="order_table">
+                        <tr>
+                            <th colspan="2">Products</th>
+                            <th>Total</th>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="assets/img/product-18-1.png" alt="" class="order_img">
+                            </td>
+
+                            <td>
+                                <h3 class="table_title">IndoPrimo Men's Cotton Casual Shirt</h3>
+                                <p class="table_quantity">x 2</p>
+                            </td>
+
+                            <td>
+                                <span class="table_price">₹490.00</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="assets/img/category7.png" alt="" class="order_img">
+                            </td>
+
+                            <td>
+                                <h3 class="table_title">Bella Vita Luxury Woman Eau De Parfum</h3>
+                                <p class="table_quantity">x 2</p>
+                            </td>
+
+                            <td>
+                                <span class="table_price">₹565.00</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="assets/img/product-8-1.png" alt="" class="order_img">
+                            </td>
+
+                            <td>
+                                <h3 class="table_title">Kurta Set Fabric:Cotton Blend</h3>
+                                <p class="table_quantity">x 2</p>
+                            </td>
+
+                            <td>
+                                <span class="table_price">₹637.00</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td> <span class="order_subtitle">Subtotal</span>
+                            </td>
+                            <td colspan="2"><span class="table_price">₹280.00</span></td>
+                        </tr>
+
+                        <tr>
+                            <td> <span class="order_subtitle">Shipping</span>
+                            </td>
+                            <td colspan="2"><span class="table_price">Free Shipping</span></td>
+                        </tr>
+
+                        <tr>
+                            <td> <span class="order_subtitle">Total</span>
+                            </td>
+                            <td colspan="2"><span class="order_grand-total">₹280.00</span></td>
+                        </tr>
+
+                    </table>
+
+                    <div class="payment_methods">
+                        <h3 class="checkout_title payment_title">Payment</h3>
+                        <div class="payment_option flex">
+                            <input type="radio" name="radio" checked class="payment_input">
+                            <label for="" class="payment_label">Net Banking</label>
+                        </div>
+                        <div class="payment_option flex">
+                            <input type="radio" name="radio" class="payment_input">
+                            <label for="" class="payment_label">Credi/Debit/ATM Card</label>
+                        </div>
+
+                        <div class="payment_option flex">
+                            <input type="radio" name="radio" class="payment_input">
+                            <label for="" class="payment_label">Cash on Delivery</label>
+                        </div>
+                    </div>
+                    <button class="btn btn--md">Place Order</button>
+                </div>
             </div>
         </section>
+
     </main>
 
     <!--=================== FOOTER ====================-->
@@ -193,14 +285,9 @@
             <div class="footer_content">
                 <h3 class="footer_title">Secured Payment Gateways</h3>
 
-                <img src="assets/img/payent-method.png" alt="" class="payment_img">
+                <img src="assets/img/payment-method.png" alt="" class="payment_img">
             </div>
 
-        </div>
-
-        <div class="footer_bottom">
-            <p class="copyright">&copy; 2024 ShopSwift. All rights reserved</p>
-            <span class="designer">Designed by ShopSwift</span>
         </div>
     </footer>
 
