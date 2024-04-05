@@ -14,13 +14,37 @@
 
     <!--=================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 
     <title>ShopSwift</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/login-form.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <style>
+        /* Add custom styles here */
+        .form-group input[type="text"],
+        .form-group input[type="password"],
+        .form-group input[type="email"] {
+            border: 1px solid #ced4da;
+            /* Border color */
+            border-radius: 5px;
+            /* Border radius */
+            padding: 10px;
+            /* Padding */
+        }
+
+        .form-group input[type="text"]::placeholder,
+        .form-group input[type="password"]::placeholder,
+        .form-group input[type="email"]::placeholder {
+            color: #6c757d;
+            /* Placeholder color */
+        }
+    </style>
 
 
 </head>
@@ -41,7 +65,7 @@
         </div>
         <nav class="nav container">
             <a href="index.html" class="nav_logo">
-                <img src="assets/img/logo.png" alt="" class="nav_logo-img">
+                <img src="assets/img/png.png" alt="" class="nav_logo-img">
             </a>
             <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list">
@@ -81,11 +105,8 @@
         </nav>
     </header>
 
-
     <!--=================== MAIN ====================-->
     <main class="main">
-
-
         <!--=================== BREADCRUMB ====================-->
         <section class="breadcrumb">
             <ul class="breadcrumb_list flex container">
@@ -96,118 +117,73 @@
         </section>
 
         <!--=================== LOGIN-REGISTER ====================-->
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Login and Sign Up Forms</title>
-            <!-- Bootstrap CSS -->
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-            <!-- Font Awesome CSS -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-            <style>
-                /* Add custom styles here */
-                .form-group input[type="text"],
-                .form-group input[type="password"],
-                .form-group input[type="email"] {
-                    border: 1px solid #ced4da; /* Border color */
-                    border-radius: 5px; /* Border radius */
-                    padding: 10px; /* Padding */
-                }
-                .form-group input[type="text"]::placeholder,
-                .form-group input[type="password"]::placeholder,
-                .form-group input[type="email"]::placeholder {
-                    color: #6c757d; /* Placeholder color */
-                }
-            </style>
-        </head>
-        <body>
-            <div class="container">
-                <div class="row justify-content-center mt-4">
-                    <div class="col-lg-6 col-md-8 col-sm-10">
-                        <div class="bg-white p-4">
-                            <!-- Login Form -->
-                            <form id="login-form" class="login-form">
-                                <h3 class="text-center mb-4">Login</h3>
-                                <div class="form-group">
-                                    <label for="username">Username</label>
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fa fa-user"></i></span>
-                                        </div>
-                                        <input type="text" class="form-control" id="username" placeholder="Enter your username">
+        <div class="container">
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-6 col-md-8 col-sm-10">
+                    <div class="bg-white p-4">
+                        <!-- Login Form -->
+                        <form id="login-form" class="login-form">
+                            <h3 class="text-center mb-4">Login</h3>
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-user"></i></span>
                                     </div>
+                                    <input type="text" class="form-control" id="username"
+                                        placeholder="Enter your username">
                                 </div>
-                                <div class="form-group">
-                                    <label for="password">Password</label>
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="fa fa-lock"></i></span>
-                                        </div>
-                                        <input type="password" class="form-control" id="password"
-                                            placeholder="Enter your password">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-lock"></i></span>
                                     </div>
-                                </div>
-                                <button type="submit" class="btn btn-primary btn-block">Login</button>
-                            </form>
-        
-                            <!-- Sign Up Form -->
-                            <form id="signup-form" class="signup-form" style="display: none;">
-                                <h3 class="text-center mb-4">Sign Up</h3>
-                                <div class="form-group">
-                                    <label for="firstname">First Name</label>
-                                    <input type="text" class="form-control" id="firstname" placeholder="Enter your first name">
-                                </div>
-                                <div class="form-group">
-                                    <label for="lastname">Last Name</label>
-                                    <input type="text" class="form-control" id="lastname" placeholder="Enter your last name">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="signup-password">Password</label>
-                                    <input type="password" class="form-control" id="signup-password"
+                                    <input type="password" class="form-control" id="password"
                                         placeholder="Enter your password">
                                 </div>
-                                <div class="form-group">
-                                    <label for="confirm-password">Confirm Password</label>
-                                    <input type="password" class="form-control" id="confirm-password"
-                                        placeholder="Confirm your password">
-                                </div>
-                                <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
-                            </form>
-        
-                            <!-- Toggle between Login and Sign Up forms -->
-                            <p class="text-center mt-3">Don't have an account? <a href="#" id="signup-link">Sign Up</a></p>
-                            <p class="text-center">Already have an account? <a href="#" id="login-link">Login</a></p>
-                        </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Login</button>
+                        </form>
+
+                        <!-- Sign Up Form -->
+                        <form id="signup-form" class="signup-form" style="display: none;">
+                            <h3 class="text-center mb-4">Sign Up</h3>
+                            <div class="form-group">
+                                <label for="firstname">First Name</label>
+                                <input type="text" class="form-control" id="firstname"
+                                    placeholder="Enter your first name">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname">Last Name</label>
+                                <input type="text" class="form-control" id="lastname"
+                                    placeholder="Enter your last name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="signup-password">Password</label>
+                                <input type="password" class="form-control" id="signup-password"
+                                    placeholder="Enter your password">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm-password">Confirm Password</label>
+                                <input type="password" class="form-control" id="confirm-password"
+                                    placeholder="Confirm your password">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+                        </form>
+
+                        <!-- Toggle between Login and Sign Up forms -->
+                        <p class="text-center mt-3">Don't have an account? <a href="#" id="signup-link">Sign Up</a></p>
+                        <p class="text-center">Already have an account? <a href="#" id="login-link">Login</a></p>
                     </div>
                 </div>
             </div>
-        
-            <!-- jQuery -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <script>
-                $(document).ready(function () {
-                    // Toggle between Login and Sign Up forms
-                    $('#signup-link').click(function () {
-                        $('#login-form').hide();
-                        $('#signup-form').show();
-                    });
-        
-                    $('#login-link').click(function () {
-                        $('#signup-form').hide();
-                        $('#login-form').show();
-                    });
-                });
-            </script>
-        </body>
-        </html>
-                
-
+        </div>
     </main>
     <!--=================== FOOTER ====================-->
     <footer class="footer container">
@@ -245,13 +221,9 @@
                         <a href="">
                             <img src="assets/img/icon-youtube.svg" alt="" class="footer_social-icon" />
                         </a>
-
-
                     </div>
+
                 </div>
-
-
-
             </div>
 
             <div class="footer_content">
@@ -284,15 +256,20 @@
                 <h3 class="footer_title">Secured Payment Gateways</h3>
 
                 <img src="assets/img/payment-method.png" alt="" class="payment_img">
+                <img src="assets/img/SwagBot_Footer_graphic.png" alt="" class="Swagbot_logo">
             </div>
 
         </div>
+
     </footer>
 
     <!--=================== SWIPER JS ====================-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!--=================== SCRIPT JS ====================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
@@ -301,14 +278,29 @@
                 $('#login-form').hide();
                 $('#signup-form').show();
             });
-    
+
             $('#login-link').click(function () {
                 $('#signup-form').hide();
                 $('#login-form').show();
             });
         });
     </script>
-    
+
+    <script>
+        $(document).ready(function () {
+            // Toggle between Login and Sign Up forms
+            $('#signup-link').click(function () {
+                $('#login-form').hide();
+                $('#signup-form').show();
+            });
+
+            $('#login-link').click(function () {
+                $('#signup-form').hide();
+                $('#login-form').show();
+            });
+        });
+    </script>
+
     <script src="assets/js/main.js"></script>
 
 </body>
