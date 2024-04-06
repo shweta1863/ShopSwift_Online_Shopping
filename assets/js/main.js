@@ -28,13 +28,12 @@ function startBlinking() {
   }, 1000);
 }
 
-// To start blinking
 startBlinking();
 
-// To stop blinking after 10 seconds (for example)
 setTimeout(function() {
   isBlinking = false;
 }, 10000);
+
 
 
 /*============== SHOW MENU ==============*/
@@ -57,6 +56,8 @@ if (navClose) {
     navMenu.classList.remove('show-menu');
   })
 }
+
+
 
 /*============== IMAGE GALLERY ==============*/
 document.addEventListener('DOMContentLoaded', function () {
@@ -117,14 +118,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 /*============== DEALS ==============*/
-// JavaScript to handle clicking on the image to show popup text
 document.querySelector('.deal_image').addEventListener('click', function() {
   var popupText = this.parentElement.querySelector('.popup_text');
   popupText.style.visibility = 'visible';
   popupText.style.opacity = 1;
 });
 
-// JavaScript to handle clicking outside the image to hide popup text
 document.addEventListener('click', function(event) {
   var popupText = document.querySelector('.popup_text');
   if (!event.target.closest('.image_wrapper')) {
@@ -134,7 +133,6 @@ document.addEventListener('click', function(event) {
 });
 
 
-// Get the PNG image element
 const formImage = document.querySelector('.form_image');
 
 // Add hover effect
